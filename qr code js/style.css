@@ -1,0 +1,20 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    /* align-items: space-between; */
+    height: 100vh;
+ 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+
+}
+#qrcontainer{
+    margin: 1rem;
+}
