@@ -9,7 +9,7 @@
     </head>
     <body>
     <div class="container">
-        <label for="urlInput">Enter url</label>
+        <label for="urlInput">Enter url:</label>
         <input type="text" id="urlInput" value="">
         <button onclick="generateQR()">Generate</button>
         <div id="qrcontainer">
@@ -17,18 +17,6 @@
         </div>
         
     </div>
-    <script>
-        function generateQR(){
-            var url = document.getElementById("urlInput").value;
-            var qrcodeDiv = document.getElementById("qrcode");
-            qrcodeDiv.innerHTML = ""
-            var qrcode= new QRCode(qrcodeDiv,{
-                text : url,
-                width:128,
-                height : 128
-
-            })
-        }
-    </script>
+    <script src="./index.js"></script>
     </body>
 </html>
