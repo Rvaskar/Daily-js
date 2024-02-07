@@ -12,7 +12,7 @@ const app = express();
 app.set("view engine", "ejs");
 
 mongoose.connect(process.env.MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(() => console.log("DB Connected"))
+  .then(() => console.log("Successfully Connected to  MongoDB"))
   .catch(err => console.error("Error connecting to DB:", err));
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -59,5 +59,5 @@ app.post('/', upload.single('image'), async (req, res) => {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log('Server listening on port', port);
+  console.log('Server listening on port', `http://localhost:${port}/`);
 });
