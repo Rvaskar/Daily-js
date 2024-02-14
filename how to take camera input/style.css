@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    height: 500px;
+    border: 2px solid orange;
+    display: flex;
+    align-items: center;
+    border-radius: 1rem;
+    flex-direction: column;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.container video{
+    width: 450px;
+    height: 450px;
+    /* border: 2px solid greenyellow; */
+}
+.con{
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+button{
+    background-color: #111fff;
+    border: none;
+    padding: 8px 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    color: white;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
