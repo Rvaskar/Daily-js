@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            textarea{
+                outline: none;
+                border: 5px solid greenyellow;
+                border-radius: 1rem;
+                resize: vertical;
+            }
+            button{
+                background-color: #4284ee;
+                font-size: 1rem;
+                font-weight: 600;
+                color: white;
+                border: none;
+                padding: 0.8rem 2rem;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Text to Speech</h1>
+        <textarea id='textarea' rows="10"  cols="100"></textarea> </br></br>
+        <button type="button" id="speakbtn" onclick="speak()">Speak</button>
+
+        <script src="./script.js"></script>
+        
+
+    </body>
+</html>

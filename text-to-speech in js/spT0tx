@@ -1,0 +1,19 @@
+// if ('SpeechRecognition' in window || 'webkitSpeechRecognition' in window) {
+//   const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+//   recognition.lang = 'en-US';
+//   recognition.interimResults = false;
+//   recognition.maxAlternatives = 1;
+
+//   recognition.onresult = function(event) {
+//     const transcript = event.results[0][0].transcript;
+//     console.log('You said: ' + transcript);
+//   };
+
+//   recognition.onend = function() {
+//     recognition.start();
+//   };
+
+//   recognition.start();
+// } else {
+//   console.log('Speech recognition not supported.');
+// }
