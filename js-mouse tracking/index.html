@@ -1,0 +1,55 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            canvas {
+  border: 1px solid black;
+  width: 560px;
+  height: 360px;
+}
+        </style>
+    </head>
+    <body>
+    <h1>tracking mouse</h1>
+    <h1>Drawing with mouse events</h1>
+<canvas id="myPics" width="560" height="360"></canvas>
+        <script src="./script.js"></script>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Trail Effect</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            overflow: hidden;
+        }
+        .trail-dot {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgb(42, 255, 34);
+            box-shadow: 0 0 10px 5px rgba(10, 255, 10, 0.6);
+            pointer-events: none; /* Prevent dots from interfering with mouse events */
+            animation: fade-out 1s ease-out forwards; /* Fade-out animation */
+        }
+        @keyframes fade-out {
+            to {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <script src="./script.js"></script>
+</body>
+</html>

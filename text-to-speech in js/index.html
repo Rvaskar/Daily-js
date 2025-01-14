@@ -27,12 +27,24 @@
                 padding: 0.8rem 2rem;
                 border-radius: 10px;
             }
+            .but{
+                display: flex;
+                justify-content: center;
+                gap: 2px;
+            }
+           
         </style>
-    </head>
+    </head>   
     <body>
         <h1>Text to Speech</h1>
         <textarea id='textarea' rows="10"  cols="100"></textarea> </br></br>
-        <button type="button" id="speakbtn" onclick="speak()">Speak</button>
+        <div class="but">
+            <button type="button" id="speakbtn" onclick="speak()">Speak</button>
+        <button type="button" id="speakstpbtn" onclick="pauseSpeaking()">Pause</button>
+        <button type="button" id="speakstpbtn" onclick="resumeSpeaking()">Resume</button>
+        <button type="button" id="speakstpbtn" onclick="stopSpeaking()">Stop</button>
+        </div>
+        
 
         <script src="./script.js"></script>
         
